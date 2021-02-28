@@ -1,0 +1,7 @@
+FROM alpine:latest
+RUN apk update
+RUN apk upgrade
+COPY 1.sh .
+RUN chmod ugo+s 1.sh
+CMD ./1.sh
+
